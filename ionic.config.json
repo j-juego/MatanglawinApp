@@ -1,5 +1,7 @@
 {
   "name": "MatanglawinProject",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
