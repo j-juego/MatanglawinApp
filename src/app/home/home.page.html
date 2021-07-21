@@ -1,20 +1,136 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <div id="header-card">
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
   </div>
+  <div id="nav-buttons">
+    <span>  
+      <ion-button routerLink="/categories">
+        <ion-icon slot="icon-only" name="grid-outline"></ion-icon>
+      </ion-button>
+    </span>
+    <span>
+      <ion-button>
+       <ion-icon slot="icon-only" name="image-outline"></ion-icon>
+      </ion-button>
+    </span>
+    <span>
+      <ion-button>
+        <ion-icon slot="icon-only" name="dice-outline"></ion-icon>
+      </ion-button>
+    </span>
+    <span>
+      <ion-button>
+        <ion-icon slot="icon-only" name="book-outline"></ion-icon>
+      </ion-button>
+    </span>
+  </div>
+  <div id="pop-grid">
+  <h3>Featured Facts</h3> 
+  <ion-grid id="card-grid">
+    <ion-row>
+      <ion-col size="6">
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(1).jpg?raw=true">
+        </a>
+        <h5>History</h5>
+      </ion-col>
+      <ion-col size="6">
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project.jpg?raw=true">
+        </a>
+        <h5>People</h5>
+      </ion-col>
+      <ion-col size="6">
+        <a routerLink="" routerDirection="forward">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(2).jpg?raw=true">
+        </a>
+        <h5>Animals</h5>
+      </ion-col>
+      <ion-col size="6">
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(3).jpg?raw=true">
+        </a>
+        <h5>Food</h5>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  </div>
+  <div id="categ">
+      <a routerLink="/categories" style="text-decoration: none;"><h3 style="color: black;">Facts by Category</h3></a>
+    <ion-grid id="card-grid">
+      <ion-row>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(2).jpg?raw=true">
+          <h5>Animals</h5>
+        </ion-col>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(3).jpg?raw=true">
+          <h5>Food</h5>
+        </ion-col>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(1).jpg?raw=true">
+          <h5>History</h5>
+        </ion-col>
+        <ion-col size="6">
+          <a>
+            <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(6).jpg?raw=true">
+          </a>
+          <h5>Technology</h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
